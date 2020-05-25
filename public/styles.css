@@ -1,0 +1,168 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;700&display=swap');
+
+body{
+  font-family: "Montserrat";
+  background-color: #000000;
+  background-image: url("https://www.transparenttextures.com/patterns/shattered.png");
+  font-size:20px;
+  color:white;
+}
+
+.title{
+  text-align:center;
+  font-weight:700;
+  margin-top:5%;
+  font-size:4rem;
+}
+
+.jumbotron {
+  background-image: url("./images/bgtitle.jpg");
+  background-repeat: no-repeat;
+  -webkit-background-size:cover;
+  -moz-background-size:cover;
+  -o-background-size:cover;
+  background-size: cover;
+  color:black;
+  height:400px;
+}
+
+.col-4{
+  padding:4%;
+}
+
+.col-4 img{
+  width:150px;
+  margin:5% 15%;
+}
+
+.col-4 h3{
+  background-color:#00adb5;
+  font-weight:500;
+  padding:3%;
+  border-radius:10px;
+  color:white;
+  border:2px solid black;
+}
+
+.darwin-heading,.flow-heading{
+  background-color:#eeeeee;
+  width:50%;
+  margin:0 auto;
+  text-align:center;
+  padding:2%;
+  color:black;
+  border-radius:10px;
+  margin-top:2%;
+  border:2px solid black;
+}
+
+.nav-heading{
+  font-size:25px;
+  font-weight:bold;
+}
+
+.set-container {
+  text-align: center;
+  position: absolute;
+  right: 30px;
+  height:500px;
+  overflow: hidden;
+  width: 40%;
+  font-size:2rem;
+}
+
+.nav-item{
+  font-weight:200;
+  font-size:15px;
+}
+
+.logo{
+  width:50px;
+}
+
+h2{
+  color:white;
+  font-size:2rem;
+  font-weight:700;
+  margin-bottom:3%;
+}
+
+#about{
+  background-color:#00adb5;
+  padding:5% 10%;
+  line-height:2;
+}
+
+#process{
+  background-color:#00adb5;
+  padding:5% 0;
+}
+
+.process-heading{
+  margin-left:5%;
+  font-size:40px;
+}
+
+.carousel-inner{
+  background-color:#eeeeee;
+  margin-left:15%;
+  border-radius:10px;
+  color:black;
+  border: 2px solid black;
+}
+
+.carousel-inner h3{
+  background-color:black;
+  width:50%;
+  padding:5px;
+  border-radius:10px;
+  color:white;
+}
+
+.carousel-item{
+  width:70%;
+  margin:10%;
+  line-height:2;
+}
+
+
+.webPage{
+  height:500px;
+  color:white;
+}
+
+.next{
+  background-color:black;
+  border-radius: 5px;
+  border:none;
+  color:white;
+  font-size:25px;
+  margin-top:5%;
+}
+
+.next:hover{
+  background-color:#d9dee4;
+  color:black;
+}
+
+.details{
+  margin-top:5%;
+  margin-left:10%;
+  width:30%;
+  padding: 20px;
+  font-size:30px;
+  background-color:#393e46;
+  border-radius:10px;
+}
+
+#flowChart{
+  text-align:center;
+}
+
+.flow-img{
+  margin:5% 0;
+  border-radius:10px;
+  border: 2px black solid;
+}
+
+

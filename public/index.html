@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Title</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js" integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="./styles.css" />
+  </head>
+
+  <body>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+      <img class="logo" src="./images/biology.svg" alt="logo">
+      <div class="navbar-brand nav-heading" href="#">Genetic Algorithm Project</div>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarsExample03" aria-controls="navbarsExample03" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+    
+      <div class="collapse navbar-collapse" id="navbarsExample03">
+        <ul class="navbar-nav mr-auto">
+          <li class="nav-item">
+            <a class="nav-link" href="#about">About</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#biology">Biology</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#process">Process</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#code">Code</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#GeneticAlgo">Demo</a>
+          </li>
+        </ul>
+      </div>
+    </nav>
+    <div class="jumbotron">
+      <h1 class="title">Genetic Algorithm</h1>
+    </div>
+    <div class="container-fluid" id="about">
+      <h2>What is Genetic Algorithm?</h2>
+      <p style="color:black">Genetic Algorithm (GA) is a search-based optimization technique based on the principles of Genetics and Natural Selection. It is frequently used to find optimal or near-optimal solutions to difficult problems which otherwise would take a lifetime to solve.</p>
+    </div>
+    <div class="container-fluid" id="biology">
+      <h2 class="darwin-heading">Darwinian Natural Selection</h2>
+      <div class="row">
+        <div class="col-4">
+          <img src="./images/gene.svg" alt="">
+          <h3>Heredity</h3>
+          <p>There must be a process in place by which children receive the properties of their parents</p>
+        </div>
+        <div class="col-4">
+          <img src="./images/variation.svg" alt="">
+          <h3>Variation</h3>
+          <p>There must be a vareity of traits present in the population or a means with which to introduce variation such as Mutation</p>
+        </div>
+        <div class="col-4">
+          <img src="./images/selection.svg" alt="">
+          <h3>Selection</h3>
+          <p>There must be a mechanism by which some members of population are chosen and their genes are passed down while others do not. This is typically called "Survival of the fittest"</p>
+
+        </div>
+      </div>
+
+      <!-- Three side headings side by side -->
+    </div>
+    <div class="container-fluid" id="process">
+      <h2 class="process-heading">Process involved</h2>
+      <div id="processSlide" class="carousel slide carousel-fade" data-ride="carousel">
+        <div class="carousel-inner" role="listbox" style=" width:70%;height:500px !important">
+          <div class="carousel-item active" data-interval="3000">
+            <h3>Initialize</h3>
+            <p>Create a population of N elements,each with randomly generated DNA</p>
+          </div>
+          <div class="carousel-item" data-interval="3000">
+            <h3>Selection</h3>
+            <p>Evaluate the fitness of each element of the population and build the mating pool based on their fitness</p>
+          </div>
+          <div class="carousel-item" data-interval="6000">
+            <h3>Reproduction</h3>
+            <p>This is process is repeated until the population size is reached</p>
+            <ul>
+              <li>Pick two parents probability according to their fitness</li>
+              <li>CrossOver :: Create a "child" by combining the DNA of these two parents</li>
+              <li>Mutation :: Mutate the child's DNA based on given probability</li>
+              <li>Add the new child to a new population</li>
+            </ul>
+          </div>
+          <div class="carousel-item" data-interval="3000">
+            <h3>Repeat</h3>
+            <p>Replace the old population with new population and repeat the process from Selection</p>
+          </div>
+        </div>
+        <a class="carousel-control-prev" href="#processSlide" role="button" data-slide="prev">
+          <span class="carousel-control-prev-icon"></span>
+        </a>
+        <a class="carousel-control-next" href="#processSlide" role="button" data-slide="next">
+          <span class="carousel-control-next-icon"></span>
+        </a>
+      </div>
+    </div>
+    <div class="container-fluid" id="flowChart">
+      <h2 class="flow-heading">Flow Chart</h2>
+      <img class="flow-img" src="./images/flowchart.jpeg" alt="">
+    </div>
+    <div class="container-fluid" id="code">
+      <h2>C++ Code</h2>
+    </div>
+    <div id="GeneticAlgo"></div>
+    <script src="../src/index.js" type="text/jsx"></script> 
+  </body>
+</html>
